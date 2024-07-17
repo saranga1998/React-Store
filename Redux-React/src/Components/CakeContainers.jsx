@@ -16,7 +16,7 @@ function CakeContainers(props) {
 const mapStateToProps = state => {
 
   return {
-    numOfCakes: state.numOfCakes
+    numOfCakes: state.cake.numOfCakes
 
   };
 };
@@ -27,4 +27,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapDispatchToProps, mapStateToProps)(CakeContainers)
+export default connect( mapStateToProps,mapDispatchToProps)(CakeContainers)
